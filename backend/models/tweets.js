@@ -13,5 +13,3 @@ var tweets = new Schema({
 });
 
 mongoose.model("tweets", tweets);
-
-module.exports = UsersModel;

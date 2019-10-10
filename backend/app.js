@@ -19,7 +19,7 @@ slack.listen((err) => {
     console.log(err);
 });
 
-const tweetsRouter = require('./controllers/tweeterController')
+const tweetsRouter = require('./controllers/twitterController')
 server.use("/", tweetsRouter);
 
 server.listen(3000, function () {
