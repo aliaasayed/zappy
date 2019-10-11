@@ -7,9 +7,16 @@ var tweets = new Schema({
         required: true,
         unique: true
     },
-    content: {
+    userName: {
         type: String
-    }
+    },
+    text: {
+        type: String
+    },
+    createdAt: {
+        type: String
+    },
 });
 
-mongoose.model("tweets", tweets);
+var tweets = mongoose.model("tweets", tweets);
+module.exports = tweets;

@@ -1,9 +1,9 @@
 const { RTMClient } = require('@slack/rtm-api');
 const config = require('../config');
+const twitterService = require('./twitterService');
+const keyword = config.keyword;
 
-const slackConfig = config.slack;
-const rtm = new RTMClient(slackConfig.token);
-
+const rtm = new RTMClient(config.slack.token);
 module.exports = {
     listen: function (callback) {
         rtm.start()
@@ -13,7 +13,13 @@ module.exports = {
             .catch(err => callback(err));
 
         rtm.on('message', (event) => {
-            console.log(event);
+            if (event.channel == config.slack.channel && event.text.toLowerCase().includes(keyword)) {
+                twitterService.saveTweets(function (err, data) {
+                    if (err)
+                        return callback(err);
+                    return callback(null);
+                });
+            }
         });
     }
 }
