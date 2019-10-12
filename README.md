@@ -8,7 +8,7 @@ simple app Zappy integrates with a Slack channel and listens on specific message
 ```bash
 https://github.com/aliaasayed/zappy.git
 ```
-2- add config token that send to your email in backend/config.js.
+2- add config token that send to your email in backend/config.js
 
 3- run app: 
     
@@ -19,10 +19,11 @@ https://github.com/aliaasayed/zappy.git
         - open http://localhost:4200/
 
     # For back-end
-        - navigate to frontend dirictory
+        - navigate to backend dirictory
         - run "npm i"
         - run "npm start"
         - the server is runing on port 3000
+        - open mongo server by run "mongo"
 
 4- use this link to join slack workspace:
 ```bash
