@@ -25,3 +25,5 @@ server.use("/", tweetsRouter);
 server.listen(3000, function () {
   console.log("Starting listen...");
 });
+
+module.exports = server;
