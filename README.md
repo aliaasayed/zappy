@@ -11,18 +11,18 @@ git clone https://github.com/aliaasayed/zappy.git
 
 3- run app: 
     
-    # For front-end 
-        - navigate to frontend dirictory
-        - run "npm i"
-        - run "ng s"
-        - open http://localhost:4200/
-
-    # For back-end
+        # For back-end
         - navigate to backend dirictory
         - run "npm i"
         - run "npm start"
         - the server is runing on port 3000
         - open mongo server by run "mongo"
+        
+    # For front-end 
+        - navigate to frontend dirictory
+        - run "npm i"
+        - run "ng s"
+        - open http://localhost:4200/
 
 4- use this link to join slack workspace:
 ```bash
