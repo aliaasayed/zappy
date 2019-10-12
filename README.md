@@ -6,7 +6,7 @@ simple app Zappy integrates with a Slack channel and listens on specific message
 
 1- clone project:
 ```bash
-https://github.com/aliaasayed/zappy.git
+git clone https://github.com/aliaasayed/zappy.git
 ```
 2- add config token that send to your email in backend/config.js
 
