@@ -1,5 +1,4 @@
 # zappy
-# server-availability-using-nodejs
 simple app Zappy integrates with a Slack channel and listens on specific messages.
 
 ## How to Run?
